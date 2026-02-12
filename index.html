@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eres Mi Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Start Menu -->
+        <div id="startMenu" class="screen active">
+            <div class="retro-window menu-window">
+                <div class="title-bar">
+                    <span>VALENTINES.EXE</span>
+                </div>
+                <div class="window-content">
+                    <h1 class="retro-title">¿Estás lista<br>para ser mi<br>Valentín?</h1>
+                    <button class="retro-button start-button" id="startBtn">Empezar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen">
+            <div class="retro-window game-window">
+                <div class="title-bar">
+                    <span id="levelTitle">LEVEL 1</span>
+                </div>
+                <div class="window-content">
+                    <h2 id="questionText" class="question-text"></h2>
+                    <div class="options-container" id="optionsContainer"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="endScreen" class="screen">
+            <div class="retro-window end-window">
+                <div class="title-bar">
+                    <span>VALENTINES.EXE</span>
+                </div>
+                <div class="window-content end-content">
+                    <h1 class="end-message">Ves que si eres<br>mi valentín,<br>Te amooooo!</h1>
+                    <div class="gif-container">
+                        <iframe src="https://tenor.com/embed/9887453683667785394" width="220" height="220" frameBorder="0" class="love-gif" allowFullScreen></iframe>
+                    </div>
+                    <button class="retro-button restart-button" id="restartBtn">Empezar Otra vez</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Messages -->
+        <div id="feedbackMessage" class="feedback-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
